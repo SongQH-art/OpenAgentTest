@@ -196,7 +196,7 @@ mods:
       transport: "grpc"
 ```
 
-完整配置文件可在开源仓库中获取：https://github.com/OnePieceLwc/OpenAgents-Debate
+完整配置文件可在开源仓库中获取：https://github.com/SongQH-art/OpenAgentTest/
 
 ## 启动辩论智能体
 ### 1. 配置环境变量（避免启动失败）
