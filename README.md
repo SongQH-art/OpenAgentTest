@@ -11,12 +11,12 @@
 本次项目核心依旧是“OpenAgents搭建协作网络 + GLM-4.7赋予灵魂”，两套工具的强强联合，让辩论赛从“想法”落地为“可实操的AI实验”。
 
 ### OpenAgents：辩论赛的“舞台搭建者”
-OpenAgents 是开源的AI代理网络框架（地址：https://github.com/openagents-org/openagents），  核心作用是创建一个共享协作空间，让多个智能体能够实时互动、接收指令、响应同伴。
+OpenAgents 是开源的AI代理网络框架（地址：https://github.com/openagents-org/openagents ），核心作用是创建一个共享协作空间，让多个智能体能够实时互动、接收指令、响应同伴。
 
 简单理解：它就像一个虚拟的辩论赛场，主持人、正方、反方三个智能体作为“参赛选手”，在这里明确身份、遵循规则、完成对话流转。每个智能体都能发现同伴、接收话题、回应观点，不受协议限制，完美适配辩论赛的协作需求。
 
 ### GLM-4.7：智能体的“灵魂注入器”
-GLM-4.7 是智谱最新旗舰模型（地址：https://www.bigmodel.cn/glm-coding?ic=4G1ARPDRUV），  在角色扮演、逻辑推理、指令遵循上表现突出，尤其适合辩论这种需要“立场坚定、表达精准、反应迅速”的场景。
+GLM-4.7 是智谱最新旗舰模型（地址：https://www.bigmodel.cn/glm-coding?ic=4G1ARPDRUV ），在角色扮演、逻辑推理、指令遵循上表现突出，尤其适合辩论这种需要“立场坚定、表达精准、反应迅速”的场景。
 
 它能精准还原每个角色的核心特质：正方的“立论扎实、层层递进”，反方的“抓漏反驳、逻辑闭环”，主持人的“中立引导、节奏把控”。同时支持长文本上下文理解，确保辩论过程不跑偏、不重复，始终围绕核心话题展开。
 
@@ -43,14 +43,14 @@ openagents init debate-network  // debate-network为项目名称，可自定义
 cd debate-network  // 进入项目目录
 openagents network start  // 启动网络
 ```
-启动成功后，会自动打开浏览器访问：http://localhost:8700/studio/，首次登录需完成基础配置：
+启动成功后，会自动打开浏览器访问：http://localhost:8700/studio/ ，首次登录需完成基础配置：
 - 智能体名称：可自定义（如DebateHost、ProSide、ConSide）
 - 智能体组：默认选择guest（无需密码）
 - 连接方式：默认localhost:8700，直接点击“连接”即可
 
 ## 配置GLM-4.7：给辩论角色“注入灵魂”
 ### 1. 获取GLM-4.7 API Key
-1. 访问GLM官网（https://www.bigmodel.cn/glm-coding?ic=4G1ARPDRUV），登录后点击“API Key”
+1. 访问GLM官网（https://www.bigmodel.cn/glm-coding?ic=4G1ARPDRUV ），登录后点击“API Key”
 2. 点击“添加新的APIKey”，生成专属密钥（格式为id.secret，务必妥善保存，切勿泄露）
 
 ### 2. 在OpenAgents中配置模型
